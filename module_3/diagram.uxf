@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>230</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>PUBLISHER
+--
+publisher_name
+publisher_code
+publisher_address
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>430</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>BOOK
+--
+book_isbn
+book_name
+book_price
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>630</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>AUTHOR
+--
+author_first_name
+author_last_name
+auther_phone
+author_email
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>80</x>
+      <y>330</y>
+      <w>90</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>m1=1..n
+m2=1..1
+publishes</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>80</x>
+      <y>530</y>
+      <w>70</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>m1=1..1
+m2=1..n
+writes</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>230</y>
+      <w>240</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>PUBLISHER DOCUMENT
+--
+{
+    "publisher_name":"Something"
+    "publisher_code":12345
+    "publisher_address":"101 Street"
+}
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>430</y>
+      <w>240</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>BOOK DOCUMENT
+--
+{
+    "book_isbn":123456789
+    "book_name":"Power"
+    "book_price":15.99
+}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>630</y>
+      <w>240</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>AUTHOR DOCUMENT
+--
+{
+    "author_first_name":"Dude"
+    "author_last_name":"Dangerous"
+    "auther_phone":"999-123-1234"
+    "author_email":"dude@what.com"
+}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>330</y>
+      <w>50</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1..n</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>530</y>
+      <w>50</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1..n</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

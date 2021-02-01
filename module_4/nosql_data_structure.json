@@ -1,0 +1,18 @@
+[{
+	"student_id":12345,
+	"first_name":"Bob",
+	"last_name":"Bank",
+	"enrollments": [{
+		"term":"Summer",
+		"gpa":4.0,
+		"start_date":"6/1/2019",
+		"end_date":"8/28/2019",
+		"courses":[{
+			"course_id":23456,
+			"description":"Java 101",
+			"instructor":"Dude Done",
+			"grade":"A"
+		}]
+	}]
+}]
+

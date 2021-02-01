@@ -1,0 +1,13 @@
+[{
+	"first_name":"Bob",
+	"last_name":"Bank",
+	"roles": [{
+		"role":"Database Administrator",
+		"permissions": [
+			"delete",
+			"insert",
+			"read",
+			"write"
+		]
+	}]
+}]
