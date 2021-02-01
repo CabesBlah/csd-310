@@ -1,0 +1,16 @@
+[{
+	"publisher_name":"Something",
+	"publisher_code":12345,
+	"publisher_address":"101 Street",
+	"published_books": [{
+		"book_isbn":123456789,
+		"book_name":"Power",
+		"book_price":15.99,
+		"author":{
+			"author_first_name":"Dude",
+			"author_last_name":"Dangerous",
+			"auther_phone":"999-123-1234",
+			"author_email":"dude@what.com"
+		}
+	}]
+}]

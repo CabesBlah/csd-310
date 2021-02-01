@@ -1,0 +1,44 @@
+[
+	{
+		"student_id":123,
+		"first_name":"Bob",
+		"last_name":"Back",
+		"enrollments":
+		[
+			{
+				"term":"Summer",
+				"gpa":3.5,
+				"start_date":
+				{
+					"month":3,
+					"day":5,
+					"year":2016
+				},
+				"end_date":
+				{
+					"month":6,
+					"day":5,
+					"year":2016
+				},
+				"courses":
+				[
+					{
+						"course_id":76,
+						"description":"Mathematics 101",
+						"instructor":"Todd Tear",
+						"grade":"B"
+					}
+				]
+			}
+		],
+		"courses":
+		[
+			{
+				"course_id":76,
+				"description":"Mathematics 101",
+				"instructor":"Todd Tear",
+				"grade":"B"
+			}
+		]
+	}
+]

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>330</y>
+      <w>140</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>CUSTOMER
+--
+_id
+first_name
+last_name
+date_of_birth
+user_name</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>110</y>
+      <w>140</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>INVOICE
+--
+_id
+date_created
+date_shipped
+subtotal</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>110</y>
+      <w>140</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>LINE_ITEM
+--
+_id
+name
+price
+quantity</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>90</x>
+      <y>210</y>
+      <w>50</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>has
+m1=1..n
+m2=1..1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>150</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>has
+m1=1..1
+m2=1..n</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>690</y>
+      <w>140</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>STUDENT
+--
+student_id
+first_name
+last_name</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>470</y>
+      <w>140</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>ENROLLMENT
+--
+term
+gpa
+start_date
+end_date</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>470</y>
+      <w>140</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>COURSE
+--
+course_id
+description
+instructor
+grade</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>90</x>
+      <y>570</y>
+      <w>50</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>has
+m1=1..n
+m2=1..1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>510</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>has
+m1=1..1
+m2=1..n</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>570</y>
+      <w>260</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>m1=1..1
+m2=1..n
+enrolls in</panel_attributes>
+    <additional_attributes>10.0;180.0;220.0;180.0;220.0;10.0</additional_attributes>
+  </element>
+</diagram>
