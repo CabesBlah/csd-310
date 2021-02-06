@@ -9,6 +9,7 @@ client = MongoClient(url)
 db = client.pytech
 students = db.students
 
+#Create student data.
 student_bob = {
 	"student_id":"1007",
 	"first_name":"Bob",
@@ -61,7 +62,7 @@ student_where = {
 			"grade":"B"
 		}]
     }]
-} 
+}
 
 #Insert student data.
 print("-- INSERT STATEMENTS --")
